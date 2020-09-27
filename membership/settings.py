@@ -132,3 +132,12 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(VENV_PATH, 'media_root')
+
+if DEBUG:
+    STRIPE_PUBLISHABLE_KEY = 'pk_test_51HQuuoEA9kReQzpnF3UuG4uViv7v9oihG5G8C5IvmGG0nD49K8RIrBeIHvthDZYThgzEqexjz6vrPNc9kcdF2UkC00vcAaGCtM'
+    STRIPE_SECRET_KEY = 'sk_test_51HQuuoEA9kReQzpn1uYBGUEXxvBVbWCqRtIRm3CGLTTh68eCqH6gE1v0FYURFLtCzhq1z0r6MChitufg6iYOiqHz00wL6pZANF'
+
+else:
+    # live keys
+    STRIPE_PUBLISHABLE_KEY = ''
+    STRIPE_SECRET_KEY = ''
