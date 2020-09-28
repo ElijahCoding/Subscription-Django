@@ -12,7 +12,6 @@ MEMBERSHIP_CHOICES = (
     ('Free', 'free')
 )
 
-
 class Membership(models.Model):
     slug = models.SlugField()
     membership_type = models.CharField(
