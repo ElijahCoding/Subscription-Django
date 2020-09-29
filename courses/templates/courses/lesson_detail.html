@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
+{% extends 'courses/base.html' %}
+
+{% block content %}
 	<h1>Lesson Detail View</h1>
 	{% if object is not None %}
 		{{ object.title }}
@@ -12,7 +9,4 @@
 		<h3>Upgrade membership</h3>
 
 	{% endif %}
-
-
-</body>
-</html>
+{% endblock %}
