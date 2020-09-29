@@ -16,3 +16,6 @@ class MembershipSelectView(ListView):
         current_membership = get_user_membership(self.request)
         context['current_membership'] = str(current_membership.membership)
         return context
+
+    def post(self, request, *args, **kwargs):
+        selected_membership = request.POST.get('membership_type')

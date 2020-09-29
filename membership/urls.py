@@ -5,8 +5,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('courses.urls')),
-    path('', include('videoservice.urls')),
+    path('courses/', include('courses.urls')),
+    path('memberships/', include('videoservice.urls')),
 ]
 
 if settings.DEBUG:
